@@ -411,6 +411,40 @@ section{
         display: inline-block;
     }
 
+    .myhead{
+        display: inline-block;
+        width: 60rem;
+    }
+    .head{
+        display: flex;
+        flex-direction: column;
+        width: 60rem;
+        
+    }
+   
+    .myhead .head img{
+        width: 38rem;
+        
+    }
+    .myhead .head .text h1{
+       font-size: 3.5rem;
+        
+    }
+    .work{
+        display: flex;
+        flex-direction: column;
+    }
+    .button{
+        flex-direction: column;
+    }
+    .button .search,.book,.service{
+            margin-right: 5rem;
+            text-align: center;
+    }
+    .search img{
+        width: 50%;
+    }
+    
     .header .navbar{
         position: absolute;
         top: 110%; right: -110%;
