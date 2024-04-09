@@ -1,0 +1,538 @@
+<html>
+    <head>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --primary:#0077b6;
+    --secondary:#48cae4;
+    --black:#333;
+    --white:#fff;
+    --box-shadow: 0 .5rem 1rem rgba(65, 45, 45, 0.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}  
+
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--primary);
+    border-radius: .5rem;
+}
+
+section{
+    padding: 5rem 7%;
+}
+
+.heading{
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--primary);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--secondary);
+}
+            
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--primary);
+    padding-right: .5rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+    color: var(--primary);
+}
+
+.header .navbar .btn{
+    margin-top: 0;
+    color: var(--white);
+}
+
+.header .navbar .btn:hover{
+    color: var(--white);
+}
+
+#menu-btn{
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+#menu-btn:hover{
+    color: var(--primary);
+}
+
+
+.doc .text1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.doc{
+    
+    
+    height: 350px;
+    border-radius: 30px;
+        display:inline-block;
+        width: 30%;
+      margin-left: 2%;
+      margin-bottom: 2%;
+       align-items: center;
+       background-color: whitesmoke;
+       overflow:hidden;
+       justify-content: space-between;
+      
+    }
+    .doc image{
+        width: 20%;
+        position: relative;
+       
+    }
+    .doc .image img{
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 20%;
+    }
+    .doc .image h2{
+    font-family: 'Copperplate Gothic Light';
+        text-align: center;
+        font-size: 2rem;
+    }
+    .doc .image span{
+        font-size:2.2rem;
+        color:black;
+        font-family:Copperplate Gothic Light;
+    }
+    a{
+        color: white;
+    }
+.doc .image button{
+    background-color: navy; 
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 25%;
+  margin-top: 10%;
+}  
+.doc .image button:hover{
+    background-color:skyblue;
+}
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+}
+.about  img{
+margin-top: 5%;
+    
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 51rem;
+}
+
+.about .row .content h3{
+    font-size: 3.5rem;
+    color: var(--primary);
+    padding: 6rem 51rem;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 1.8;
+}   
+.search{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+.search h1{
+    font-size: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.search select{
+    font-size: 2rem;
+  
+}
+.search option{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer{
+    background: var(--secondary);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(--primary);
+}
+
+.footer .box-container .box a{
+    font-size: 1.6rem;
+    display: block;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    color: var(--primary);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--primary);
+}
+
+.footer .share{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer .share a{
+    color: var(--primary);
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    border: .1rem solid var(--primary);
+    margin: .3rem;
+}
+
+.footer .share a:hover{
+    color: var(--white);
+    background: var(--primary);
+    transform: rotate(360deg);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}
+
+.footer .credit span{
+    color: var(--primary);
+}
+
+
+
+/* media queries */
+
+@media (max-width:991px){
+
+html{
+    font-size: 55%;
+}
+
+.header{
+    padding: 2rem 3rem;
+}
+
+}
+
+@media (max-width: 768px){
+
+#menu-btn{
+    display: inline-block;
+}
+
+.header .navbar{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    border-radius: .5rem;
+}
+
+.header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+}
+
+.home .slide .content{
+    width: 50rem;
+}
+
+.review .review-slider{
+    width: 100%;
+    padding: 1rem;
+    padding-top: 15%;
+}
+.about img{
+    margin-top: 20%;
+}
+.doc{
+   margin-left: 10%;
+    height: 35%;
+    width:80%;
+}
+.doc .image .content span{
+    font-size: 2rem;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.doc .image img{
+    margin-top:0%;
+    margin-left: 35%;
+    width:30%;
+}
+.doc .image .content button{
+    width: 50%;
+  margin-left: 25%;
+  
+}
+.doc .image .content a{
+font-size: 1.5rem;
+}
+}
+
+
+     </style>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <header class="header">
+
+            <a href="#" class="logo"> <img src="logo.jpg" width="80px" > </a>
+    
+            <nav class="navbar"><b>
+               <a href="ammy.html">HOME</a>
+               <a href="ammy.html">ABOUT</a>
+               <a href="doctor.html">DOCTORS</a>
+               <a href="lab.html">LAB TESTS</a>
+               
+               <a href="contact.html">Contact Us</a>
+               <a href="donate.html" class="btn"> DONATE</a></b>
+            </b>
+            </nav>
+      
+            <div id="menu-btn" class="fas fa-bars"></div>
+      
+         </header>
+         
+         
+
+   <section class="about" id="about" >
+ 
+<img src="doctor.png">
+</section>
+
+
+ <br>
+        <section class="doc" id="doc">
+            
+            <div class="image">
+                <img src="doc1.jpg">
+        
+            <div class="content">
+                <h2><br><span>Surgeon</span></h2>  <button><a href="clinic.html"><b>BOOK</b></a></button>
+            </div></div>
+</section>
+
+
+        <section class="doc" id="doc">
+            <div class="image">
+                <img src="doc1.jpg">
+            
+            <div class="content">
+                <h2><br><span>Dentist</span></h2>
+                  <button><a href="dentist.html"><b>BOOK</b></a></button>
+            </div></div>
+
+        </section>
+    
+
+        <section class="doc" id="doc">
+            <div class="image">
+                <img src="doc2.jpg">
+            
+            <div class="content">
+                <h2><br><span>Cardiologist</span></h2>  <button><a href="under.html"><b>BOOK</b></a></button>
+            </div></div>
+</section>
+<section class="doc" id="doc">
+            <div class="image">
+                <img src="doc1.jpg">
+            
+            <div class="content">
+                <h2><br><span>Homeopathic</span></h2>  <button><a href="homeo.html"><b>BOOK</b></a></button>
+            </div></div>
+
+        </section>
+
+        <section class="doc" id="doc">
+            <div class="image">
+                <img src="doc2.jpg">
+            
+            <div class="content">
+                <h2><br><span>GYNAECOLOGY</span></h2>  <button><a href="under.html"><b>BOOK</b></a></button>
+            </div></div>
+
+        </section>
+
+        <section class="doc" id="doc">
+            <div class="image">
+                <img src="doc2.jpg">
+            
+            <div class="content">
+                <h2><br><span>EYE</span></h2>  <button><a href="eye.html"><b>BOOK</b></a></button>
+            </div></div>
+
+        </section>
+
+        <section class="doc" id="doc">
+            <div class="image">
+                <img src="doc2.jpg">
+            
+            <div class="content">
+                <h2><br><span>ENT</span></h2>  <button><a href="ent.html"><b>BOOK</b></a></button>
+            </div></div>
+
+        </section>
+
+        <section class="doc" id="doc">
+            <div class="image">
+                <img src="doc2.jpg">
+            
+            <div class="content">
+                <h2><br><span>GASTROENTEROLOGY</span></h2>  <button><a href="under.html"><b>BOOK</b></a></button>
+            </div></div>
+
+        </section>
+
+                
+        <section class="footer">
+
+            <div class="box-container">
+        
+               <div class="box">
+                  <h3>contact info</h3>
+                  <a href="#"> <i class="fas fa-phone"></i>+91 6239001726</a>
+                  
+                  <a href=""> <i class="fas fa-envelope"></i> a.tech.chd@gmail.com</a>
+                  <a href="#"> <i class="fas fa-map"></i> Chandigarh, india</a>
+               </div>
+        
+               <div class="box">
+                  <h3>quick links</h3>
+                  <a href="ammy.html"> <i class="fas fa-arrow-right"></i> home</a>
+                  <a href="ammy.html"> <i class="fas fa-arrow-right"></i> about</a>
+                  <a href="doctor.html"> <i class="fas fa-arrow-right"></i> doctors</a>
+                  <a href="lab.html"> <i class="fas fa-arrow-right"></i> test</a>
+                
+               </div>
+        
+               <div class="box">
+                  <h3>extra links</h3>
+                  <a href="https://github.com/Ammyasl2003"> <i class="fas fa-arrow-right"></i> GITHUB</a>
+                 
+               </div>
+        
+            </div>
+        
+            <div class="share">
+               <a href="https://www.facebook.com/profile.php?id=100045338284518&mibextid=ZbWKwL" class="fab fa-facebook-f"></a>
+               <a href="https://instagram.com/deep_ammy_?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-pinterest"></a>
+            </div>
+        
+            <div class="credit">&copy; copyright @ 2023 by <span>Ammy Badshah</span></div>
+        
+         </section>
+
+
+    </body>
+
+</html>
+<script src="ammy.js"></script>
