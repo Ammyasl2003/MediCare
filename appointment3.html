@@ -2,9 +2,8 @@
 <!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <meta charset="UTF-8">
-    <title> Responsive Registration Form | CodingLab </title>
+    <title> Responsive Registration Form </title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -89,10 +88,6 @@ form .input-box span.details{
    align-items: center;
    cursor: pointer;
  }
- form i {
-    margin-left: -30px;
-    cursor: pointer;
-}
  form .category label .dot{
   height: 18px;
   width: 18px;
@@ -112,9 +107,20 @@ form .input-box span.details{
    display: none;
  }
  form .button{
-  
-   height: 45px;  
+   height: 45px;
    margin: 35px 0
+ }
+ 
+ form select{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
  }
  form .button input{
    height: 100%;
@@ -129,28 +135,6 @@ form .input-box span.details{
    transition: all 0.3s ease;
    background: linear-gradient(135deg, #71b7e6, #9b59b6);
  }
- form .btn{
-  height: 45px;
-   margin: 5px 0
- }
-
-form .btn button{
-   height: 100%;
-   width: 100%;
-   border-radius: 5px;
-   border: none;
-   color: #fff;
-   font-size: 18px;
-   font-weight: 500;
-   letter-spacing: 1px;
-  
-   transition: all 0.3s ease;
-   background: linear-gradient(135deg, #71b7e6, #9b59b6);
-  }
-  form .btn a{
-    color:#fff;
-    text-decoration: none;
-  }
  form .button input:hover{
   /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
@@ -184,31 +168,66 @@ form .user-details .input-box{
    </head>
 <body>
   <div class="container">
-    <div class="title">LOGIN</div>
+    <div class="title">BOOK APPOINTMENT</div>
     <div class="content">
-      <form action="login.php"  method="POST" autocomplete="off">
+      <form action="appointment.php" method="post">
         <div class="user-details">
-       
           <div class="input-box">
-            <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required name="username" id="username">
-          </div>
-          
-          
-          <div class="input-box">
-            <span class="details">Password</span>
-            <input type="password" placeholder="Enter your password" required name="password" id="password">
-    
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" name= "name" required/>
           </div>
          
-        </div>
+
         
-        <div class="button">
-          <input type="submit" value="LOGIN" style="width: 50%;margin-left: 25%;">
-          
+         
+          <div class="input-box">
+            <span class="details">Selected Surgeon Doctors</span>
+<select name="doctor">
+              <option>Dr. Ashok Sharma</option>
+            
+
+            </select>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" name="phone" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Appointment Date</span>
+            <input type="date" placeholder="select date" name="date" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Message</span>
+          <textarea rows="5" cols="43" name="message"> </textarea>
+          </div>
         </div>
-        <div class="btn">
-         <button style="width: 50%;margin-left: 25%;"> <a href="register.html">REGISTER</a></button>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="BOOK NOW">
         </div>
       </form>
     </div>
@@ -216,24 +235,3 @@ form .user-details .input-box{
 
 </body>
 </html>
-<!--
-<script>
-  const togglePassword = document.querySelector("#togglePassword");
-     const password = document.querySelector("#password");
-
-     togglePassword.addEventListener("click", function () {
-         // toggle the type attribute
-         const type = password.getAttribute("type") === "password" ? "text" : "password";
-         password.setAttribute("type", type);
-         
-         // toggle the icon
-         this.classList.toggle("bi-eye");
-     });
-
-     // prevent form submit
-     const form = document.querySelector("form");
-     form.addEventListener('submit', function (e) {
-         e.preventDefault();
-     });
-     </script>
-    -->

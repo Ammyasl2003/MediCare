@@ -111,7 +111,7 @@
   </section>
 
  
-
+ 
 <?php
 
 $conn = new mysqli('localhost','root','','test');
@@ -125,7 +125,7 @@ $conn = new mysqli('localhost','root','','test');
     
     $result = mysqli_query($conn, $sql);
     echo "<table border='5'>
-
+    
     <tr>
     
     <th>Name</th>
@@ -149,7 +149,7 @@ $conn = new mysqli('localhost','root','','test');
   
       echo "<tr>";
     
-      echo "<td>" . $row['name'] . "</td>";
+      echo "<td >" . $row['name'] . "</td>";
     
       echo "<td>" . $row['email'] . "</td>";
     
@@ -175,6 +175,7 @@ $conn = new mysqli('localhost','root','','test');
     mysqli_close($conn);
  
 ?>
+
 <script>
 function send()
 {

@@ -110,26 +110,31 @@
 <section class="donate" style=" margin-left:30%;font-size:1.3rem; background:#081D45; width:50%;height:50%;color:white;">
 	<div class="donat" style="margin-left: 5%;">
 		<h1 style="color: white;font-size:2rem">DONATION REPORT</h1><br><br>
-	<p style="font-size: 1.5rem;">TOTAL DONATION RECIEVED <span style="color: white; margin-left:25%"> $50,000</span><br><br>
+	<p style="font-size: 1.5rem;">TOTAL DONATION RECIEVED <span style="color: white; margin-left:30%"> $120</span><br><br>
 
 	<p style="color: white;">
-Tushar Negi  (India)<span style="color: white; margin-left:50%">$20</span><br>
+Tushar Negi  (India)<span style="color: white; margin-left:50%">$50</span><br>
 <span style="color:gray;font-size:1rem;">10/01/2024</span>
 </p>
 <br>
 <p style="color: white;">
-Suraj Singh  (India)<span style="color: white; margin-left:50%">$30</span><br>
+Suraj Singh  (India)<span style="color: white; margin-left:51%">$30</span><br>
 <span style="color:gray;font-size:1rem;">16/01/2024</span>
 </p>
 <br>
 <p style="color: white;">
-Paras  Singh(India)<span style="color: white; margin-left:50%">$1</span><br>
+Paras  Singh(India)<span style="color: white; margin-left:51%">$10</span><br>
 <span style="color:gray;font-size:1rem;">24/01/2024</span>
 </p>
 <br>
 <p style="color: white;">
-Vishal Gupta (India)<span style="color: white; margin-left:48%">$4</span><br>
+Vishal Gupta (India)<span style="color: white; margin-left:48%">$10</span><br>
 <span style="color:gray;font-size:1rem;">10/02/2024</span>
+</p>
+<br>
+<p style="color: white;">
+Maninder Singh (India)<span style="color: white; margin-left:43%">$20</span><br>
+<span style="color:gray;font-size:1rem;">10/03/2024</span>
 </p>
 	</div>
 

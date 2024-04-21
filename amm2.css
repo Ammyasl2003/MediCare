@@ -320,12 +320,13 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
+    
 }
 
 .footer .box-container .box h3{
     font-size: 2.2rem;
     padding: 1rem 0;
-    color: var(--primary);
+    color: white;
 }
 
 .footer .box-container .box a{
@@ -341,7 +342,7 @@ section{
 }
 
 .footer .box-container .box a:hover{
-    color: var(--primary);
+    color: white;
 }
 
 .footer .share{
@@ -362,7 +363,7 @@ section{
 
 .footer .share a:hover{
     color: var(--white);
-    background: var(--primary);
+    background: white;
     transform: rotate(360deg);
 }
 
@@ -408,39 +409,9 @@ section{
 @media (max-width: 768px){
 
     #menu-btn{
-        display: flex;
-    }
-    .myhead{
         display: inline-block;
-        width: 60rem;
     }
-    .head{
-        display: flex;
-        flex-direction: column;
-        width: 60rem;
-        
-    }
-   
-    .myhead .head img{
-        width: 38rem;
-        
-    }
-    .myhead .head .text h1{
-       font-size: 3.5rem;
-        
-    }
-    .work{
-        display: flex;
-        flex-direction: column;
-    }
-    .button{
-        flex-direction: column;
-    }
-    .button .search,.book,.service{
-            margin-right: 3rem;
-            text-align: center;
-    }
-    
+
     .header .navbar{
         position: absolute;
         top: 110%; right: -110%;

@@ -26,7 +26,7 @@
           </a>
         </li>
         <li>
-          <a href="appointment.html">
+          <a href="appoint.php">
             <i class='bx bx-box' ></i>
             <span class="links_name">Appointments</span>
           </a>
@@ -51,7 +51,7 @@
         </li>
         <li>
            
-          <a href="#">
+          <a href="donateadmin.php">
             <i class='bx bx-book-alt' ></i>
             <span class="links_name">Donation   </span>
           </a>
